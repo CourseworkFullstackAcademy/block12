@@ -1,32 +1,31 @@
 body {
     margin: 0; 
     font-family: helvetica, serif;
+}
+
+.wrapper {
     background-image: url(imgs/sunflowerYellowOverlay.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+    height: 100%;
 }
-
 
 h1 {
     margin: 0;
-    padding: 3em 0 0 0;
+    padding: 4em 0 0 0;
     color: black;
-    text-align: center;
-}
-
-h4 {
-    text-align: center;
 }
 
 p {
-    padding: 0 1.5rem 1rem 1.5rem;
+    padding: 0 1rem 1rem 1rem;
     text-align: justify;
 }
 
 .open {
     color: black;
-    font-size: 1.8rem;
+    font-size: 30px;
     float: left;
     padding-left: 1em;
     padding-top: 1em;
@@ -47,7 +46,6 @@ p {
     transition: 0.5s;
     display: block;
     overflow-x: hidden;
-    text-align: center;
     
 }
 .nav a {
@@ -55,7 +53,7 @@ p {
     color: white;
     display: block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 22px;
     transition: 0.3s;
     padding: 0.5em;
 }
@@ -67,29 +65,12 @@ p {
     font-size: 30px;
     margin: 1em 0 0 1em;
 }
-/*Why is this not working
-.active {
-    color: darkblue;
-}*/
 
-#homeText {
-    margin-bottom: 3rem;
-}
-
-.form {
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
 .footer {
     display: flex;
     justify-content: center;
+    margin-left: 1.5em;
     column-gap: 10px;
-    padding: .5rem 1.5rem .5rem 1.5rem;
-    bottom: 0;
-    width: 95.5%;
-    position: fixed;
-    background-color:#EFCF07;
 }
 
 .socialIcon {
