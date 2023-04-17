@@ -8,33 +8,45 @@
 		<title>Contact Debbie King</title>
 	</head>
 <body>
-	<div class="wrapper">
-        
-		<div class="nav" id="nav">
+	<div class="nav" id="nav">
 		  <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
 		  <a href="index.html">HOME</a>
 		  <a href="porfolio.html">PORTFOLIO</a>
 		  <a href="contact.html">CONTACT</a>
 		  <a href="about.html">ABOUT</a>
-	  </div>
+	</div>
 	  
 	  <span onclick="openNav()" class="open" id="open">&#9776</span>
-		<div>Add your contact info below and I will get in touch with you soon!</div>
-			<div class="form">
+		<div id="formTitle">Add your contact info below and I will get in touch with you soon!</div>
+			<div>
 				<form id="form">
 
-					<label for="fname">First name:</label><br>
-					<input type="text" class="name" name="fname"><br>
-					<label for="lname">Last name:</label><br>
-					<input type="text" class="name" name="lname"><br>
-					<iput for="email">Email</iput><br>
-					<input type="email" id="email" name="email>"><br>
-					<label for="phone">Phone</label><br>
-					<input type="phone" id="phone" name="phone"><br>
+					<div class="formSection"><label for="fname">Name:</label><br>
+					<input type="text" class="name" name="fname"></div><br>
+					<div class="formSection"><iput for="email">Email:</iput><br>
+					<input type="email" id="email" name="email>"></div><br>
+					<div class="formSection"><label for="phone">Phone:</label><br>
+					<input type="phone" id="phone" name="phone"></div><br>
+					<p id="preferredContact">Please select your preffered contact method</p>
+					<div class=radio><input type="radio" id="call" name="contact" value="call">
+					<label for="call">Phone Call</label></div><br>
+					<div class=radio><input type="radio" id="text" name="contact" value="text">
+					<label for="text">Text</label></div><br>
+					<div class=radio><input type="radio" id="emailButton" name="email" value="email">
+					<label for="email">Email</label></div>
 					<input type="submit" value="Submit" id="submitButton">
 				</form>
 			</div>
-		</div>
+		
+			<footer>
+				<div class="footer">
+					<div id="footerName">Debbie King</div>
+					<div>
+						<a href="https://www.linkedin.com/in/debbieaking/" target="_blank"><img src="imgs/linkedinlogo.png" class="socialIcon"/></a>
+						<a href="https://github.com/DebFullstack" target="_blank"><img src="imgs/githublogo.png" class="socialIcon" id="gitHubLogo"/></a>
+					</div>
+				</div>
+			</footer>
 		<script src="javascript.js"></script>
 </body>
 </html>
